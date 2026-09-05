@@ -68,7 +68,6 @@ export default function Home() {
           <div className="work-list">
             {work.map((item, i) => <a href={item.href} target="_blank" rel="noreferrer" className="work-row" key={item.name}><span className="work-no">0{i + 1}</span><div><h3>{item.name}</h3><p>{item.type}</p></div><div className="tags">{item.tags.map(tag => <span key={tag}>{tag}</span>)}</div><ArrowUpRight className="work-arrow" size={28} /></a>)}
           </div>
-          <p className="disclosure">Selected product experience is presented to demonstrate relevant technical capabilities. It does not imply ownership of or an ongoing commercial relationship with the listed companies.</p>
         </div>
       </section>
 
