@@ -32,6 +32,7 @@ export default function Home() {
         <div className="eyebrow"><span /> Software development partner · Available worldwide</div>
         <p className="kicker">Strategy. Engineering. Delivery.</p>
         <h1>Software solutions built around <em>real business needs.</em></h1>
+        <figure className="hero-art" aria-hidden="true"><img src="./hero-ecosystem.png" alt="" /><span className="art-index">BL—01 / DIGITAL PRODUCT SYSTEMS</span></figure>
         <div className="hero-bottom">
           <p>We help companies turn complex ideas into dependable digital products—from web and mobile applications to SaaS platforms, custom software and AI integrations.</p>
           <a className="circle-link" href="#expertise" aria-label="Explore expertise"><ArrowDownRight size={28} /></a>
@@ -74,6 +75,7 @@ export default function Home() {
       <section className="approach dark-section section" id="approach">
         <div className="shell">
           <div className="section-head light"><div><p className="section-label">Working together</p><h2>Clear process.<br />No unnecessary complexity.</h2></div><p>Direct communication, thoughtful decisions and visible progress from the first conversation through delivery.</p></div>
+          <figure className="process-art"><img src="./process-journey.png" alt="Abstract visualization of a software idea progressing into a finished digital product" /><figcaption><span>From possibility</span><span>to production</span></figcaption></figure>
           <div className="steps">
             <div><span>01</span><h3>Understand</h3><p>Clarify the business problem, users, priorities and definition of success.</p></div>
             <div><span>02</span><h3>Shape</h3><p>Turn the goal into a realistic product direction, scope and technical plan.</p></div>

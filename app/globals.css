@@ -15,12 +15,16 @@ a { color: inherit; text-decoration: none; }
 .nav-links a:hover { opacity: .5; }
 .nav-cta { justify-self: end; display: flex; align-items: center; gap: 18px; border: 1px solid var(--ink); padding: 15px 18px; font-size: 13px; font-weight: 700; }
 .nav-cta:hover { background: var(--ink); color: var(--paper); }
-.hero { min-height: calc(100vh - 100px); padding: clamp(60px, 8vw, 118px) 0 38px; display: flex; flex-direction: column; }
+.hero { min-height: calc(100vh - 100px); padding: clamp(60px, 8vw, 118px) 0 38px; display: flex; flex-direction: column; position: relative; }
 .eyebrow { text-transform: uppercase; letter-spacing: .1em; font-size: 11px; font-weight: 700; display: flex; align-items: center; gap: 10px; }
 .eyebrow span { width: 11px; height: 11px; border-radius: 50%; background: var(--lime); border: 3px solid var(--ink); box-shadow: 0 0 0 2px var(--lime); }
 .kicker { margin: clamp(70px, 10vh, 115px) 0 14px; text-transform: uppercase; letter-spacing: .25em; font-size: 13px; }
 h1 { margin: 0; max-width: 1300px; font-size: clamp(62px, 9.2vw, 146px); line-height: .88; letter-spacing: -.075em; font-weight: 700; }
 h1 em { display: block; color: var(--lime); font-family: Georgia, serif; font-weight: 400; -webkit-text-stroke: 1.6px var(--ink); text-shadow: 3px 3px 0 var(--ink); }
+.hero-art { position: relative; margin: 58px 0 0; height: clamp(260px, 42vw, 610px); overflow: hidden; background: var(--ink); box-shadow: 0 28px 80px rgba(0,0,0,.18); }
+.hero-art::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,5,4,.34), transparent 45%), linear-gradient(0deg, rgba(5,5,4,.4), transparent 35%); pointer-events: none; }
+.hero-art img { width: 100%; height: 100%; object-fit: cover; display: block; transform: scale(1.01); }
+.art-index { position: absolute; z-index: 1; left: 24px; bottom: 20px; color: rgba(255,255,255,.72); font-size: 10px; letter-spacing: .18em; }
 .hero-bottom { margin-top: auto; padding-top: 55px; display: flex; justify-content: space-between; align-items: flex-end; }
 .hero-bottom p { margin: 0; max-width: 650px; color: var(--muted); font-size: clamp(17px, 1.5vw, 22px); line-height: 1.55; }
 .circle-link { width: 64px; height: 64px; display: grid; place-items: center; border-radius: 50%; background: var(--ink); color: var(--lime); transition: transform .25s; }
@@ -38,6 +42,7 @@ h1 em { display: block; color: var(--lime); font-family: Georgia, serif; font-we
   h1 { font-size: clamp(54px, 17vw, 82px); line-height: .9; }
   h1 em { margin-top: 8px; text-shadow: 2px 2px 0 var(--ink); }
   .hero-bottom { gap: 25px; }
+  .hero-art { margin-top: 42px; height: 270px; }
   .circle-link { width: 52px; height: 52px; flex: 0 0 52px; }
 }
 
@@ -80,6 +85,10 @@ h1 em { display: block; color: var(--lime); font-family: Georgia, serif; font-we
 .disclosure { margin: 28px 0 0 auto; max-width: 760px; color: #77766f; font-size: 12px; line-height: 1.6; }
 .section-head.light > p { color: #999890; }
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 90px; border-top: 1px solid rgba(255,255,255,.18); }
+.process-art { position: relative; margin: 72px 0 0; aspect-ratio: 16 / 7; overflow: hidden; border: 1px solid rgba(255,255,255,.16); }
+.process-art img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.05); }
+.process-art::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 100px rgba(0,0,0,.28); pointer-events: none; }
+.process-art figcaption { position: absolute; z-index: 1; inset: auto 20px 18px; display: flex; justify-content: space-between; color: rgba(255,255,255,.72); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
 .steps > div { min-height: 265px; padding: 28px 26px 0 0; border-right: 1px solid rgba(255,255,255,.18); }
 .steps > div + div { padding-left: 26px; }
 .steps span { color: var(--lime); font-size: 12px; }
@@ -119,6 +128,7 @@ footer { margin-top: 100px; padding: 25px 0; border-top: 1px solid rgba(0,0,0,.3
   .service-grid, .steps { grid-template-columns: 1fr; }
   .service-card { min-height: 450px; padding: 20px; }
   .steps > div, .steps > div + div { min-height: auto; padding: 28px 0 45px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
+  .process-art { margin-top: 48px; aspect-ratio: 4 / 3; }
   .steps h3 { margin-top: 38px; }
   .work-row { grid-template-columns: 38px 1fr 25px; gap: 10px; }
   .tags { display: none; }
