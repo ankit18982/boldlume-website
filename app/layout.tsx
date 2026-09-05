@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Ankit Khandelwal — Software Development & Digital Products',
-  description: 'Software development for web, mobile, SaaS, custom platforms and AI-powered products.',
+  title: 'Boldlume — Software Development & Digital Products',
+  description: 'Boldlume builds web, mobile, SaaS, custom software and AI-powered digital products for companies worldwide.',
+  icons: { icon: '/boldlume-favicon.png' },
 };
 
 export default function RootLayout({

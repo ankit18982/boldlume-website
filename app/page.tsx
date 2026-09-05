@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav shell">
-        <a className="identity" href="#top" aria-label="Ankit Khandelwal home"><span className="monogram">AK</span><span>Ankit Khandelwal</span></a>
+        <a className="identity" href="#top" aria-label="Boldlume home"><img className="brand-logo" src="/boldlume-logo.png" alt="Boldlume — Bright ideas. Boldly built." /></a>
         <div className="nav-links"><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#approach">Approach</a></div>
         <a className="nav-cta" href="#contact">Start a conversation <ArrowUpRight size={17} /></a>
       </nav>
@@ -33,7 +33,7 @@ export default function Home() {
         <p className="kicker">Strategy. Engineering. Delivery.</p>
         <h1>Software solutions built around <em>real business needs.</em></h1>
         <div className="hero-bottom">
-          <p>I help companies turn complex ideas into dependable digital products—from web and mobile applications to SaaS platforms, custom software and AI integrations.</p>
+          <p>We help companies turn complex ideas into dependable digital products—from web and mobile applications to SaaS platforms, custom software and AI integrations.</p>
           <a className="circle-link" href="#expertise" aria-label="Explore expertise"><ArrowDownRight size={28} /></a>
         </div>
         <div className="hero-line"><span /></div>
@@ -41,10 +41,10 @@ export default function Home() {
 
       <section className="statement dark-section">
         <div className="shell statement-grid">
-          <p className="section-label">What I bring</p>
+          <p className="section-label">What we bring</p>
           <div>
             <h2>One partner for the entire <span>product journey.</span></h2>
-            <p className="lead">From early product thinking and interface development to complex integrations and long-term improvement, I bring a practical engineering perspective to every stage.</p>
+            <p className="lead">From early product thinking and interface development to complex integrations and long-term improvement, Boldlume brings a practical engineering perspective to every stage.</p>
             <div className="metrics">
               <div><strong>5+</strong><span>Years building software</span></div>
               <div><strong>Full-cycle</strong><span>Strategy to delivery</span></div>
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section className="services shell section" id="expertise">
-        <div className="section-head"><div><p className="section-label">Capabilities</p><h2>How I can help.</h2></div><p>Flexible software expertise for new products, growing platforms and established digital businesses.</p></div>
+        <div className="section-head"><div><p className="section-label">Capabilities</p><h2>How we can help.</h2></div><p>Flexible software expertise for new products, growing platforms and established digital businesses.</p></div>
         <div className="service-grid">
           {services.map(({ n, icon: Icon, title, text }) => <article className="service-card" key={title}><div className="card-top"><span>{n}</span><Icon size={25} strokeWidth={1.6} /></div><h3>{title}</h3><p>{text}</p></article>)}
         </div>
@@ -92,13 +92,13 @@ export default function Home() {
         <div className="shell contact-inner">
           <p className="section-label">Have a project in mind?</p>
           <h2>Let’s turn it into something <em>useful.</em></h2>
-          <p className="contact-copy">Share what you are building, improving or trying to solve. I’ll respond with practical questions and a clear next step.</p>
+          <p className="contact-copy">Share what you are building, improving or trying to solve. We’ll respond with practical questions and a clear next step.</p>
           <div className="contact-links">
-            <a href="mailto:business@boldlume.com"><Mail size={20} /> Email me <ArrowRight size={18} /></a>
+            <a href="mailto:business@boldlume.com"><Mail size={20} /> Email Boldlume <ArrowRight size={18} /></a>
             <a href="https://wa.me/919588220190" target="_blank" rel="noreferrer"><MessageCircle size={20} /> WhatsApp <ArrowRight size={18} /></a>
-            <a href="https://www.linkedin.com/in/ankit-khandelwal-176a5b430/" target="_blank" rel="noreferrer"><span className="linkedin-mark">in</span> LinkedIn <ArrowRight size={18} /></a>
+            <a href="https://www.instagram.com/boldlume/" target="_blank" rel="noreferrer"><span className="social-mark">B</span> Instagram <ArrowRight size={18} /></a>
           </div>
-          <footer><span>© {new Date().getFullYear()} Ankit Khandelwal</span><span>Software development · Available worldwide</span><a href="#top">Back to top ↑</a></footer>
+          <footer><span>© {new Date().getFullYear()} Boldlume</span><span>Bright ideas. Boldly built.</span><a href="#top">Back to top ↑</a></footer>
         </div>
       </section>
     </main>
