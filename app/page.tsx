@@ -4,12 +4,12 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { n: '01', icon: MonitorSmartphone, image: '/capabilities/web-mobile.png', title: 'Web & mobile products', text: 'Responsive web platforms and high-quality native or cross-platform mobile applications.' },
-  { n: '02', icon: CloudCog, image: '/capabilities/saas-cloud.png', title: 'SaaS & cloud platforms', text: 'Scalable subscription products, business dashboards, APIs and cloud-based systems.' },
-  { n: '03', icon: Boxes, image: '/capabilities/custom-software.png', title: 'Custom software', text: 'Purpose-built tools, internal systems and automation designed around your exact workflow.' },
-  { n: '04', icon: Bot, image: '/capabilities/ai-integrations.png', title: 'AI & smart integrations', text: 'Practical AI capabilities, intelligent workflows and third-party services integrated responsibly.' },
-  { n: '05', icon: Braces, image: '/capabilities/realtime.png', title: 'Real-time experiences', text: 'Chat, video conferencing, notifications, WebSockets, VoIP and communication products.' },
-  { n: '06', icon: Code2, image: '/capabilities/modernization.png', title: 'Modernization & support', text: 'Performance improvement, feature expansion, codebase modernization and ongoing engineering.' },
+  { n: '01', icon: MonitorSmartphone, image: './capabilities/web-mobile.png', title: 'Web & mobile products', text: 'Responsive web platforms and high-quality native or cross-platform mobile applications.' },
+  { n: '02', icon: CloudCog, image: './capabilities/saas-cloud.png', title: 'SaaS & cloud platforms', text: 'Scalable subscription products, business dashboards, APIs and cloud-based systems.' },
+  { n: '03', icon: Boxes, image: './capabilities/custom-software.png', title: 'Custom software', text: 'Purpose-built tools, internal systems and automation designed around your exact workflow.' },
+  { n: '04', icon: Bot, image: './capabilities/ai-integrations.png', title: 'AI & smart integrations', text: 'Practical AI capabilities, intelligent workflows and third-party services integrated responsibly.' },
+  { n: '05', icon: Braces, image: './capabilities/realtime.png', title: 'Real-time experiences', text: 'Chat, video conferencing, notifications, WebSockets, VoIP and communication products.' },
+  { n: '06', icon: Code2, image: './capabilities/modernization.png', title: 'Modernization & support', text: 'Performance improvement, feature expansion, codebase modernization and ongoing engineering.' },
 ];
 
 const work = [
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav shell">
-        <a className="identity" href="#top" aria-label="Boldlume home"><img className="brand-logo" src="/boldlume-logo.png" alt="Boldlume — Bright ideas. Boldly built." /></a>
+        <a className="identity" href="#top" aria-label="Boldlume home"><img className="brand-logo" src="./boldlume-logo.png" alt="Boldlume — Bright ideas. Boldly built." /></a>
         <div className="nav-links"><a href="#expertise">Expertise</a><a href="#work">Work</a><a href="#approach">Approach</a></div>
         <a className="nav-cta" href="#contact">Start a conversation <ArrowUpRight size={17} /></a>
       </nav>
