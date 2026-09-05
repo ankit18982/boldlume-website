@@ -4,12 +4,12 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { n: '01', icon: MonitorSmartphone, title: 'Web & mobile products', text: 'Responsive web platforms and high-quality native or cross-platform mobile applications.' },
-  { n: '02', icon: CloudCog, title: 'SaaS & cloud platforms', text: 'Scalable subscription products, business dashboards, APIs and cloud-based systems.' },
-  { n: '03', icon: Boxes, title: 'Custom software', text: 'Purpose-built tools, internal systems and automation designed around your exact workflow.' },
-  { n: '04', icon: Bot, title: 'AI & smart integrations', text: 'Practical AI capabilities, intelligent workflows and third-party services integrated responsibly.' },
-  { n: '05', icon: Braces, title: 'Real-time experiences', text: 'Chat, video conferencing, notifications, WebSockets, VoIP and communication products.' },
-  { n: '06', icon: Code2, title: 'Modernization & support', text: 'Performance improvement, feature expansion, codebase modernization and ongoing engineering.' },
+  { n: '01', icon: MonitorSmartphone, image: '/capabilities/web-mobile.png', title: 'Web & mobile products', text: 'Responsive web platforms and high-quality native or cross-platform mobile applications.' },
+  { n: '02', icon: CloudCog, image: '/capabilities/saas-cloud.png', title: 'SaaS & cloud platforms', text: 'Scalable subscription products, business dashboards, APIs and cloud-based systems.' },
+  { n: '03', icon: Boxes, image: '/capabilities/custom-software.png', title: 'Custom software', text: 'Purpose-built tools, internal systems and automation designed around your exact workflow.' },
+  { n: '04', icon: Bot, image: '/capabilities/ai-integrations.png', title: 'AI & smart integrations', text: 'Practical AI capabilities, intelligent workflows and third-party services integrated responsibly.' },
+  { n: '05', icon: Braces, image: '/capabilities/realtime.png', title: 'Real-time experiences', text: 'Chat, video conferencing, notifications, WebSockets, VoIP and communication products.' },
+  { n: '06', icon: Code2, image: '/capabilities/modernization.png', title: 'Modernization & support', text: 'Performance improvement, feature expansion, codebase modernization and ongoing engineering.' },
 ];
 
 const work = [
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="services shell section" id="expertise">
         <div className="section-head"><div><p className="section-label">Capabilities</p><h2>How we can help.</h2></div><p>Flexible software expertise for new products, growing platforms and established digital businesses.</p></div>
         <div className="service-grid">
-          {services.map(({ n, icon: Icon, title, text }) => <article className="service-card" key={title}><div className="card-top"><span>{n}</span><Icon size={25} strokeWidth={1.6} /></div><h3>{title}</h3><p>{text}</p></article>)}
+          {services.map(({ n, icon: Icon, image, title, text }) => <article className="service-card" key={title}><div className="card-top"><span>{n}</span><Icon size={25} strokeWidth={1.6} /></div><div className="service-visual"><img src={image} alt="" loading="lazy" /></div><h3>{title}</h3><p>{text}</p></article>)}
         </div>
       </section>
 
