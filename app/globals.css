@@ -62,15 +62,15 @@ h1 em { display: block; color: var(--lime); font-family: Georgia, serif; font-we
 .section-head h2 { font-size: clamp(52px, 6.5vw, 96px); }
 .section-head > p { max-width: 500px; margin: 0 0 7px; color: var(--muted); font-size: 17px; line-height: 1.6; }
 .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.service-card { min-height: 490px; padding: 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; transition: background .25s, transform .25s; overflow: hidden; }
+.service-card { min-height: 0; padding: 24px 24px 30px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); display: flex; flex-direction: column; transition: background .25s, transform .25s; overflow: hidden; }
 .service-card:hover { background: var(--lime); transform: translateY(-3px); }
 .card-top { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 12px; }
-.service-visual { position: relative; aspect-ratio: 4 / 3; margin: 22px 0 28px; overflow: hidden; background: var(--ink); }
+.service-visual { position: relative; aspect-ratio: 16 / 10; margin: 20px 0 24px; overflow: hidden; background: var(--ink); }
 .service-visual::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(255,255,255,.12); pointer-events: none; }
 .service-visual img { width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(.9) contrast(1.05); transition: transform .45s ease, filter .3s ease; }
 .service-card:hover .service-visual img { transform: scale(1.04); filter: saturate(1.05) contrast(1.08); }
-.service-card h3 { margin: auto 0 15px; font-size: clamp(24px, 2.1vw, 34px); line-height: 1; letter-spacing: -.04em; }
-.service-card p { margin: 0; max-width: 340px; color: var(--muted); line-height: 1.55; font-size: 14px; }
+.service-card h3 { margin: 0 0 13px; font-size: clamp(24px, 2.1vw, 34px); line-height: 1.05; letter-spacing: -.04em; }
+.service-card p { margin: 0; max-width: 360px; color: var(--muted); line-height: 1.55; font-size: 14px; }
 .service-card:hover p, .service-card:hover .card-top { color: var(--ink); }
 .work-section { background: #dedbd3; }
 .work-section .section-head { margin-bottom: clamp(42px, 5vw, 68px); }
@@ -126,7 +126,8 @@ footer { margin-top: 100px; padding: 25px 0; border-top: 1px solid rgba(0,0,0,.3
   .metrics { grid-template-columns: 1fr; margin-top: 55px; }
   .metrics div { padding: 23px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
   .service-grid, .steps { grid-template-columns: 1fr; }
-  .service-card { min-height: 450px; padding: 20px; }
+  .service-card { min-height: 0; padding: 20px 20px 26px; }
+  .service-visual { margin: 18px 0 22px; }
   .steps > div, .steps > div + div { min-height: auto; padding: 28px 0 45px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.18); }
   .process-art { margin-top: 48px; aspect-ratio: 4 / 3; }
   .steps h3 { margin-top: 38px; }
